@@ -19,18 +19,14 @@ div.jumbotron {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
-a {
-	color: white;
-}
+a {	color: white; }
 #camera {
 	font-size: 200px;
 	color: #333333;
 	text-align: center;
 }
-#tittle {
-	color: #00b19a;
-}
-
+#title { color: #00b19a; }
+#title-header { font-size: 30px; }
 #copy { margin-top: 14px; }
 .gamma {
 	background: #1caa98;
@@ -49,30 +45,28 @@ ul li i { padding-right: 10px; font-size: 18px;  }
 	color: #fff;
 	background: #00b19a;
 }
+div.jumbotron { padding-top: 0px; padding-bottom: 10px;}
 .text-corporate { color: #00b19a; }
+.panel { margin-bottom: 5px }
+.margin-top-30 { margin-top: 30px; }
+.container { width: 70% }
 
 /*----------------MEDIA QUERYS------------------*/
 
 @media screen and (max-width: 991px) and (min-width: 580px) {
-	#phone-image { display: none; }
-	div.jumbotron{ padding: 20px 25px; }
-	#jumbo .container {	margin: 8%;	}
-	.container { width: 80% }
+	div.jumbotron{ padding: 10px 0px 15px; }
+	.container { width: 60% }
 }
 @media screen and (max-width: 579px) and (min-width: 450px) {
-	#phone-image { display: none; }
-	div.jumbotron{ padding-bottom: 40px; }
-	h1 { font-size: 35px; }
-	#sub-heading { font-size: 20px; }
+	div.jumbotron{ padding-bottom: 10px; }
+	#title-header { font-size: 25px; }}
 	.gamma {padding: 25px 35px;	font-size: 18px; }
 	ul li i { padding-right: 10px; font-size: 16px; }
-	.container { width: 80% }
+	.container { width: 90% }
 }
 @media screen and (max-width: 449px) {
-	#phone-image { display: none; }
-	div.jumbotron{ padding-bottom: 25px; }
-	h1 { font-size: 30px; text-align: center;}
-	#sub-heading { font-size: 16px; text-align: center;}
+	div.jumbotron{ padding-bottom: 10px; }
+	#title-header { font-size: 10px; }
 	.div-center { display: block; padding-left: 15%}
 	img { padding: 10px; }
 	.gamma {padding: 20px 30px;	font-size: 16px; }
