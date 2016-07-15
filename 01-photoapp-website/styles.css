@@ -2,8 +2,9 @@
 img { width: 100%; }
 footer { background: #333333;
 	color: white;
-	padding: 10px;
+	padding-top: 20px;
 }
+label { margin-top: 3% }
 nav#nav.navbar-default {
 	border-radius: 0px;
     -webkit-box-shadow: inset 0 0px 0 rgba(255,255,255,.15),0 0px 0px rgba(0,0,0,.075);
@@ -14,24 +15,23 @@ nav#nav.navbar-default {
 	padding: 5px;
 	border: 1px solid #ccc;
 }
-nav.navbar { margin-bottom: 0px;  }
+nav.navbar { margin-bottom: 0px; }
 div.jumbotron {
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+	background: #1caa98;
+	color: #fff;
 }
-a {
-	color: white;
-}
+.header-home { padding-bottom: 0px; margin-bottom: 0px; }
+.header-about { margin: 0px; padding: 0px; }
+a {	color: white; }
 #camera {
 	font-size: 200px;
 	color: #333333;
 	text-align: center;
 }
-#tittle {
-	color: #00b19a;
-}
-
-#copy { margin-top: 14px; }
+#title { color: #00b19a; }
+.header-home h1 { font-size: 50px; }
+.header-about h1 { font-size: 40px; margin-bottom: 20px; }
+#copy { text-align: right;}
 .gamma {
 	background: #1caa98;
 	color: white;
@@ -40,41 +40,52 @@ a {
 	font-size: 20px;
 }
 ul { list-style: none; padding-left: 0px; line-height: 25px;}
-ul li i { padding-right: 10px; font-size: 18px;  }
+ul li i { padding-right: 10px; font-size: 14px;  }
 .div-center {
     display: flex;
     align-items: center;
 }
 #jumbo {
-	color: #fff;
 	background-image: url(material/img/img/site_showcase_bg.jpg);
 }
 .text-corporate { color: #00b19a; }
+.panel { margin-bottom: 5px }
+.margin-top-30 { margin-top: 30px; }
+.container { width: 80% }
 
 /*----------------MEDIA QUERYS------------------*/
 
 @media screen and (max-width: 991px) and (min-width: 580px) {
 	#phone-image { display: none; }
-	div.jumbotron{ padding: 20px 25px; }
+	.header-home{ padding: 20px 25px; }
+	.header-home h1 { font-size: 45px; }
+	.header-about h1 { font-size: 35px; margin-bottom: 15px; }
 	#jumbo .container {	margin: 8%;	}
 	.container { width: 80% }
 }
 @media screen and (max-width: 579px) and (min-width: 450px) {
 	#phone-image { display: none; }
-	div.jumbotron{ padding-bottom: 40px; }
-	h1 { font-size: 35px; }
+	.header-home { padding-bottom: 40px; }
+	.header-home h1 { font-size: 40px; }
+	.header-about h1{ font-size: 30px; }
 	#sub-heading { font-size: 20px; }
 	.gamma {padding: 25px 35px;	font-size: 18px; }
 	ul li i { padding-right: 10px; font-size: 16px; }
-	.container { width: 80% }
+	.container { width: 90% }
+	footer { text-align: center }
+	#copy { text-align: center }
 }
 @media screen and (max-width: 449px) {
 	#phone-image { display: none; }
-	div.jumbotron{ padding-bottom: 25px; }
-	h1 { font-size: 30px; text-align: center;}
+	.header-home{ padding-bottom: 25px; text-align: center; }
+	.header-home h1 { font-size: 35px; }
+	.header-about h1 { font-size: 25px; }
 	#sub-heading { font-size: 16px; text-align: center;}
 	.div-center { display: block; padding-left: 15%}
 	img { padding: 10px; }
 	.gamma {padding: 20px 30px;	font-size: 16px; }
 	ul li i { padding-right: 10px; font-size: 14px; }
+	.container { width: 100% }
+	footer { text-align: center }
+	#copy { text-align: center }
 }
